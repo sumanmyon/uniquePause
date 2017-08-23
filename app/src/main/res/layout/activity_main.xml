@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suman.uniquepausefinal.MainActivity"
+    android:background="@color/videoBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainActivity_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:titleTextColor="#fff"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_below="@+id/mainActivity_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/javaCameraView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:camera_id="front"
+        android:layout_below="@+id/mainActivity_toolBar"/>
+
+    <TextView
+        android:id="@+id/dataWillDisplay_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivity_toolBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_dark"/>
+</RelativeLayout>

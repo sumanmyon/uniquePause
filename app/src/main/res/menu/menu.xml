@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/gallery"
+        android:title="Gallery"
+        android:icon="@drawable/ic_collections_white_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/aboutUs"
+        android:title="About Us"
+        app:showAsAction="never"/>
+
+</menu>

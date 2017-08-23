@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/none"
+        android:title="None"
+        android:icon="@drawable/ic_visibility_off_white_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/google_face"
+        android:title="Google Face"
+        android:icon="@drawable/ic_insert_emoticon_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/google_eye"
+        android:title="Google Eye"
+        android:icon="@drawable/ic_visibility_black_24dp"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/opencv_face"
+        android:title="VJ Face"
+        android:icon="@drawable/ic_insert_emoticon_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/opencv_eye"
+        android:title="VJ Eye"
+        android:icon="@drawable/ic_visibility_black_24dp"
+        app:showAsAction="never"/>
+
+</menu>

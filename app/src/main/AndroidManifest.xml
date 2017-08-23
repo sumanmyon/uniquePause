@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.suman.uniquepausefinal">
+
+    <!-- Accessing Storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <!-- Permission for Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.front.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permission for Google face vision -->
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="face" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/up"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntroSider.IntroSlider">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MediaStoragesExternalAndInternal.MediaListsInternalOrExternal" />
+        <activity android:name=".MediaStoragesExternalAndInternal.InternalVideoStorage" />
+        <activity android:name=".MediaStoragesExternalAndInternal.ExternalVideoStorage" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape"
+        />
+
+        <service android:name=".ServiceConnectionForCamerwAndFaceDetection.CameraAndFaceDetectionService" />
+
+        <activity android:name=".ViolaJonesAlgorithm.ViolaAct" />
+        <activity android:name=".SettingAndAboutUs.Setting" />
+        <activity android:name=".SettingAndAboutUs.AboutUs"></activity>
+    </application>
+
+</manifest>
